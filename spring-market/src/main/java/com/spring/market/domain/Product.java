@@ -3,7 +3,7 @@ package com.spring.market.domain;
 public class Product {
     private int productId;
     private String name;
-    private int categoriyId;
+    private int categoryId;
     private double price;
     private int stock;
     private boolean active;
@@ -25,12 +25,12 @@ public class Product {
         this.name = name;
     }
 
-    public int getCategoriyId() {
-        return categoriyId;
+    public int getCategoryId() {
+        return categoryId;
     }
 
-    public void setCategoriyId(int categoriyId) {
-        this.categoriyId = categoriyId;
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
     }
 
     public double getPrice() {
