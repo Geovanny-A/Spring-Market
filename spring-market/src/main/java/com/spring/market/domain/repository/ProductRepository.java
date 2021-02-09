@@ -12,5 +12,5 @@ public interface ProductRepository {
     Optional<Product> getProduct(int productId);
     Product save(Product product);
     void delete(int productId);
-    Optional<List<Product>> getProductBySalePriceLessThanAndIdCategory(int salePrice, int categoryId);
+
 }
