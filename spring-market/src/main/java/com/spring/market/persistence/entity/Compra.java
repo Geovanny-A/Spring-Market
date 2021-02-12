@@ -2,7 +2,6 @@ package com.spring.market.persistence.entity;
 
 import javax.persistence.*;
 import java.time.LocalDateTime;
-import java.util.Date;
 import java.util.List;
 
 @Entity
