@@ -116,6 +116,82 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Get all purchases",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/spring-market/api/purchases/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"spring-market",
+						"api",
+						"purchases",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get purchases by client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8090/spring-market/api/purchases/client/4546221",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"spring-market",
+						"api",
+						"purchases",
+						"client",
+						"4546221"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save purchase",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": " {\r\n        \r\n        \"clientId\": \"4546221\",\r\n        \"date\": \"2021-08-10T17:30:00\",\r\n        \"paymentMethod\": \"T\",\r\n        \"comment\": \"\",\r\n        \"state\": \"P\",\r\n        \"items\": [\r\n            {\r\n                \"productId\": 1,\r\n                \"quantity\": 10,\r\n                \"total\": 3000.0,\r\n                \"active\": true\r\n            },\r\n            {\r\n                \"productId\": 24,\r\n                \"quantity\": 1,\r\n                \"total\": 4000.0,\r\n                \"active\": true\r\n            },\r\n            {\r\n                \"productId\": 27,\r\n                \"quantity\": 1,\r\n                \"total\": 9000.0,\r\n                \"active\": true\r\n            },\r\n            {\r\n                \"productId\": 36,\r\n                \"quantity\": 1,\r\n                \"total\": 40000.0,\r\n                \"active\": true\r\n            },\r\n            {\r\n                \"productId\": 49,\r\n                \"quantity\": 2,\r\n                \"total\": 16400.0,\r\n                \"active\": true\r\n            }\r\n        ]\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8090/spring-market/api/purchases/save",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8090",
+					"path": [
+						"spring-market",
+						"api",
+						"purchases",
+						"save"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
