@@ -1,6 +1,5 @@
 package com.spring.market.web.controller;
 
-import com.spring.market.domain.Product;
 import com.spring.market.domain.Purchase;
 import com.spring.market.domain.service.PurchaseService;
 import org.springframework.beans.factory.annotation.Autowired;
