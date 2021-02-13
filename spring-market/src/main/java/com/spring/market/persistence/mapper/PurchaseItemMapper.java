@@ -15,13 +15,13 @@ public interface PurchaseItemMapper {
             @Mapping(source = "cantidad", target = "quantity"),
             @Mapping(source = "estado", target = "active")
     })
-    PurchaseItem ToPurchaseItem(ComprasProducto producto);
+    PurchaseItem toPurchaseItem(ComprasProducto producto);
 
     @InheritInverseConfiguration
     @Mappings({
             @Mapping(target = "compra", ignore = true),
             @Mapping(target = "producto", ignore = true),
-            @Mapping(target = "id.idCompra", ignore = true),
+            @Mapping(target = "id.idCompra", ignore = true)
     })
-    ComprasProducto toComprasProducts(PurchaseItem item);
+    ComprasProducto toComprasProducto(PurchaseItem item);
 }
