@@ -229,6 +229,15 @@
 			"request": {
 				"method": "POST",
 				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"username\" : \"geovanny\",\r\n    \"password\" : \"geovanny123\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
 				"url": {
 					"raw": "http://supeermarket.herokuapp.com/spring-market/api/auth/authenticate",
 					"protocol": "http",
@@ -251,7 +260,13 @@
 			"name": "Get all Products in Heroku",
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJnZW92YW5ueSIsImlhdCI6MTYxMzI2OTE1NSwiZXhwIjoxNjEzMzA1MTU1fQ.0OIVbsRvAhmDuqn-PDghDnbjvHXWTGAxOPbhqA1oRyg",
+						"type": "text"
+					}
+				],
 				"url": {
 					"raw": "http://supeermarket.herokuapp.com/spring-market/api/products/all",
 					"protocol": "http",
