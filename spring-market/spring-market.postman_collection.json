@@ -223,6 +223,52 @@
 				}
 			},
 			"response": []
+		},
+		{
+			"name": "Authenticate in Heroku",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://supeermarket.herokuapp.com/spring-market/api/auth/authenticate",
+					"protocol": "http",
+					"host": [
+						"supeermarket",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"spring-market",
+						"api",
+						"auth",
+						"authenticate"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all Products in Heroku",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://supeermarket.herokuapp.com/spring-market/api/products/all",
+					"protocol": "http",
+					"host": [
+						"supeermarket",
+						"herokuapp",
+						"com"
+					],
+					"path": [
+						"spring-market",
+						"api",
+						"products",
+						"all"
+					]
+				}
+			},
+			"response": []
 		}
 	]
 }
